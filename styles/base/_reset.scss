@@ -15,6 +15,7 @@
   
     // design elements
     --transition: 0.3s ease-in-out;
+    --outline: 2px dotted var(--color-blue);
   }
   
   
@@ -47,6 +48,10 @@
   p {
     margin: 0;
   }
+
+  a {
+    text-decoration: none;
+  }  
   
   .sr-only {
     border: 0;
