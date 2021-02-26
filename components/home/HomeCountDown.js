@@ -4,6 +4,7 @@ import StaticCountDown from '../StaticCountDown'
 import DynamicCountDown from '../DynamicCountDown'
 
 export default function HomeCountDown({ isStatic }) {
+    const comingDate = new Date(Date.now() + 12 * 24 * 57 * 60 * 1000)
 
     return (
         <section className="home-countdown">
