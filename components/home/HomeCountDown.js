@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import StaticCountDown from '../StaticCountDown'
+import DynamicCountDown from '../DynamicCountDown'
 
 export default function HomeCountDown({ isStatic }) {
 
@@ -8,8 +9,8 @@ export default function HomeCountDown({ isStatic }) {
         <section className="home-countdown">
             <div className="container container--countdown">
                 <div className="countdown__info">
-                    <p className="t-coming"><span className="t-white">Coming</span> <span className="t-blue">4 Nov 2020</span></p>
-                    <StaticCountDown isDark={true} />
+                    <p className="t-coming"><span className="t-white">Coming</span> <span className="t-blue">{comingDate.getDay()} {comingDate.toLocaleString('default', { month: 'short' })} {comingDate.getFullYear()}</span></p>
+                    {isStatic ? <StaticCountDown isDark={true} /> : <DynamicCountDown isDark={true} />}
                 </div>
                 <Link href="/signup">
                     <a className="btn btn--blue">Get Started</a>
