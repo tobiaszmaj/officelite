@@ -2,11 +2,11 @@
 
 Landing page made with Next.js.
 
-![Design preview](preview.jpg)
+![Design preview](preview.gif)
 
 ## Demo
 
-Check out the demo! - 
+Check out the demo! - [LINK](http://officelite-inky.vercel.app/)
 
 ## Technologies
 
